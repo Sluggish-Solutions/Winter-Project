@@ -15,3 +15,14 @@
 ## Division of Labor (To be decided Tomorrow)
 - TODO...
 
+
+
+## Resources 
+
+- OpenAI
+  - https://platform.openai.com/docs/guides/images/language-specific-tips?context=node
+
+- Supabase
+  - Client docs -> https://supabase.com/docs/reference/javascript/introduction
+  - Auth docs -> https://supabase.com/docs/guides/auth/auth-helpers/sveltekit
+  - Database docs -> https://supabase.com/docs/guides/database/overview
