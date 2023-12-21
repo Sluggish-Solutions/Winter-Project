@@ -1,38 +1,17 @@
-# create-svelte
+# TODO 
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
+## Core Stack
+- Sveltekit
+- Supabase
+- OpenAI 
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Core Project Features 
+- User able to sign up via Google OAuth. ( Can look into other OAuth providers too ) 
+- User enters a prompt on the home page.
+- Show an AI generated image, with the ability to be saved specific to that user.
+- User is able to see all their saved images form their dashboard.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Division of Labor (To be decided Tomorrow)
+- TODO...
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
