@@ -1,38 +1,47 @@
-# create-svelte
+# TODO 
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Creating a project
+## Core Stack
+- Sveltekit
+- Supabase
+- OpenAI 
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Core Project Features 
+  - UI
+    - Header
+      - [ ] User Avatar
+      - [ ] View Favorited Button
+      - [ ] Show Logo
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+    - Home Page
+      - [ ] Input
+      - [ ] Image Placeholder
+      - [ ] Button to save image to user supabase storage bucket
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+    - Favorites Page
+      - [ ] Scrollable view of all favorited images
+      - [ ] Remove from favorites button 
+  - Backend
+    - Tables
+      - [ ] Users table 
+      - [ ] Favorites table ( some way to show relationship between user and liked images)
+      - [ ] Storage Buckets for images
+    - Open AI API
+      - [ ] Query DALL-E to generate image from client prompt
+      - [ ] Store image in supabase bucket
+      - [ ] send image url to client
+    - OAuth
+      - [ ] Supabase auth-helpers-svelte setup
+      - [ ] Google Console Client ID / Key 
+      - [ ] Supabase OAuth Redirect config 
+      - [ ] Auth check on global +Layout.server.ts ( to automatically redirect any unauthorized users)
+  
+## Resources 
 
-## Developing
+- OpenAI
+  - https://platform.openai.com/docs/guides/images/language-specific-tips?context=node
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- Supabase
+  - Client docs -> https://supabase.com/docs/reference/javascript/introduction
+  - Auth docs -> https://supabase.com/docs/guides/auth/auth-helpers/sveltekit
+  - Database docs -> https://supabase.com/docs/guides/database/overview
