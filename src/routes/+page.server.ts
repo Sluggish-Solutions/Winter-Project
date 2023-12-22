@@ -5,9 +5,9 @@ const openai = new OpenAI({ apiKey: OPENAI_API_KEY })
 
 export const actions = {
 	generateImage: async ({ request }: { request: any }) => {
-		let promptRequest = await request.formData()
+		const promptRequest = await request.formData()
 		console.log(promptRequest)
-		let prompt = promptRequest.get('imgPrompt')
+		const prompt = promptRequest.get('imgPrompt')
 		const image = await openai.images.generate({
 			prompt: prompt.toString(),
 			response_format: 'b64_json'

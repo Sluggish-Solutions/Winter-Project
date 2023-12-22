@@ -29,7 +29,7 @@
   - Open AI API
     - [X] Query DALL-E to generate image from client prompt
     - [ ] Store image in supabase bucket
-    - [X] send image url to client
+    - [X] send base64 img to client
   - OAuth
     - [ ] Supabase auth-helpers-svelte setup
     - [ ] Google Console Client ID / Key.
