@@ -7,34 +7,35 @@
 - OpenAI 
 
 ## Core Project Features 
-  - UI
-    - Header
-      - [ ] User Avatar
-      - [ ] View Favorited Button
-      - [ ] Show Logo
+- UI
+  - Header
+    - [ ] User Avatar
+    - [ ] View Favorited Button
+    - [ ] Show Logo
 
-    - Home Page
-      - [ ] Input
-      - [ ] Image Placeholder
-      - [ ] Button to save image to user supabase storage bucket
+  - Home Page
+    - [ ] Input
+    - [ ] Image Placeholder
+    - [ ] Button to save image to user supabase storage bucket
 
-    - Favorites Page
-      - [ ] Scrollable view of all favorited images
-      - [ ] Remove from favorites button 
-  - Backend
-    - Tables
-      - [ ] Users table 
-      - [ ] Favorites table ( some way to show relationship between user and liked images)
-      - [ ] Storage Buckets for images
-    - Open AI API
-      - [ ] Query DALL-E to generate image from client prompt
-      - [ ] Store image in supabase bucket
-      - [ ] send image url to client
-    - OAuth
-      - [ ] Supabase auth-helpers-svelte setup
-      - [ ] Google Console Client ID / Key 
-      - [ ] Supabase OAuth Redirect config 
-      - [ ] Auth check on global +Layout.server.ts ( to automatically redirect any unauthorized users)
+  - Favorites Page
+    - [ ] Scrollable view of all favorited images
+    - [ ] Remove from favorites button.
+- Backend
+  - Tables
+    - [ ] Users table.
+    - [ ] Favorites table ( some way to show relationship between user and liked images)
+    - [ ] Storage Buckets for images
+  - Open AI API
+    - [ ] Query DALL-E to generate image from client prompt
+    - [ ] Store image in supabase bucket
+    - [ ] send image url to client
+  - OAuth
+    - [ ] Supabase auth-helpers-svelte setup
+    - [ ] Google Console Client ID / Key.
+    - [ ] Supabase OAuth Redirect config.
+    - [ ] Auth check on global +Layout.server.ts ( to automatically redirect any unauthorized users)
+    - [ ] Create a bucket on user creation, liked to that user via foreign key.
   
 ## Resources 
 
