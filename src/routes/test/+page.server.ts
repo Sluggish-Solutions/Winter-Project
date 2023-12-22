@@ -8,8 +8,7 @@ export const load = (async () => {
 		response_format:'b64_json'
 	})
 
-	console.log(image)
-	  
+	//need to do something here brooooo, some sort of test?
 	return {base64: image.data[0].b64_json}
 	//return {url: image.data.url}
 }) 
