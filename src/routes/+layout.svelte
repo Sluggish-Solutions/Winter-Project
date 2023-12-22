@@ -22,7 +22,7 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow })
 
 	import { AppShell } from '@skeletonlabs/skeleton'
-	import Header from './Header.svelte'
+	import Header from '../lib/header.svelte'
 </script>
 
 <AppShell>
