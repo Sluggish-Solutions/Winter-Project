@@ -6,6 +6,9 @@
 	const handleSubmit = () => {
 		// send to dalle to create image
 		console.log(`Submitted: ${imgPrompt}`)
+
+		// reset form
+		imgPrompt = ""
 	}
 </script>
 
